@@ -7,5 +7,5 @@
   
     angular
       .module("app")
-      .component("homComponent", homComponent);
+      .component("homeComponent", homeComponent);
 })();
