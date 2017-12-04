@@ -1,6 +1,7 @@
 (function(){
     function BudgetService($http){
         var budget = 0;
+        var apiData ="";
     return {
         setBudget: setBudget,
         getBudget: getBudget,
@@ -21,11 +22,13 @@
             method: "GET"
         }).then(function(response){
             console.log(response.data);
-            // apiData=response;
-            // return data;
+            apiData=response;
+            return apiData;
         });
 
    }
+    
+
 
     }
     angular 
