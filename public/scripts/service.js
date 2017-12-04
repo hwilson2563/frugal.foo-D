@@ -10,7 +10,7 @@
         console.log(budget);
         
     }
-    function getBudget(budget){
+    function getBudget(){
         return budget;
     }
     }
