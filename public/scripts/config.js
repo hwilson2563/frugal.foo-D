@@ -4,13 +4,13 @@
         .config(function($routeProvider) {
             $routeProvider
             .when("/home", {
-                template: "<homeComponent></homeComponent>"
+                template: "<home-component></home-component>"
             })
             .when("/cart", {
-                template:"<cartComponent></cartComponent>"
+                template:"<cart-component></cart-component>"
             })
             .when("/map", {
-                template:"<mapComponent></mapComponent>"
+                template:"<map-component></map-component>"
             })
             .otherwise({ redirectTo: "/home" });
         });
