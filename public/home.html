@@ -1,13 +1,13 @@
 <div>
 <h1>What's in your pocket?</h1>
 <div> 
-	<button>$10</button>
-	<button>$20</button>
-	<button>$30</button>
-	<button>$40</button>
+	<button ng-click="$ctrl.submitBudget(10)">$10</button>
+	<button ng-click="$ctrl.submitBudget(20)">$20</button>
+	<button ng-click="$ctrl.submitBudget(30)">$30</button>
+	<button ng-click="$ctrl.submitBudget(40)">$40</button>
 </div>
 <div>
-	<input type="" name="budget" placeholder="personalized budget">
-	<button>Submit</button>
+	<input type="" name="budget" placeholder="personalized budget" ng-model="$ctrl.custom">
+	<button ng-click="$ctrl.submitBudget($ctrl.custom)">Submit</button>
 </div>
 </div>
