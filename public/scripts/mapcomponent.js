@@ -1,6 +1,5 @@
 (function(){
     var mapComponent ={
-    //controller:
     templateUrl: "map.html",
     controller: function(BudgetService){
         var vm = this;
