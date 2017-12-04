@@ -7,6 +7,7 @@
     };
     function setBudget(newBudget) {
         budget = newBudget;
+        console.log(budget);
         
     }
     function getBudget(budget){
