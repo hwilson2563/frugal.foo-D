@@ -1,15 +1,16 @@
 (function(){
     function BudgetService(){
-        var word = {};
+        var budget = 0;
     return {
         setBudget: setBudget,
         getBudget: getBudget
     };
-    function setBudget() {
+    function setBudget(newBudget) {
+        budget = newBudget;
         
     }
-    function getBudget(){
-        
+    function getBudget(budget){
+        return budget;
     }
     }
     angular 
