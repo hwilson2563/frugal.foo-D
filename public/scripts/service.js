@@ -1,14 +1,21 @@
 (function(){
     function BudgetService($http){
         var budget = 0;
+        var updateBudget = 0;
         var apiData ="";
     return {
         setBudget: setBudget,
         getBudget: getBudget,
-        getLocation: getLocation
+        getLocation: getLocation,
+        newBudget: newBudget,
+        getUpdateBudget: getUpdateBudget
     };
+    function getUpdateBudget() {
+    return updateBudget;     
+    }
     function setBudget(newBudget) {
         budget = newBudget;
+        updateBudget = newBudget;
         console.log(budget);
         
     }
@@ -27,11 +34,7 @@
         });
 
    }
-    
-
-
-    }
-    angular 
-    .module("app")
-    .factory("BudgetService", BudgetService);
-})();
+   function newBudget(objPrice){
+        updateBudget = updateBudget - objPrice;
+        return updateBudget;
+   }
