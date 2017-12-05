@@ -8,6 +8,6 @@ app.use("/", routes);
 
 var port = process.env.PORT || 5000;
 
-var server = app.listen(8080, function(req, res) {
+var server = app.listen(port, function(req, res) {
     console.log("waz up I am running");
 });
