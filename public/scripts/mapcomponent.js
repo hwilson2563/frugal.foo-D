@@ -24,9 +24,9 @@
         vm.budget= BudgetService.getUpdateBudget();
         console.log(vm.budget);
         console.log(vm.initialBudget);
-        BudgetService.getLocation().then(function(response){
+        BudgetService.getLocation(locations).then(function(response){
             console.log(response);
-        })
+        });
 
     }
 
