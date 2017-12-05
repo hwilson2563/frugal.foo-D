@@ -3,13 +3,7 @@
     templateUrl: "map.html",
     controller: function(BudgetService){
         var vm = this;
-        vm.initialBudget= BudgetService.getBudget();
-        vm.budget= BudgetService.getUpdateBudget();
-        console.log(vm.budget);
-        console.log(vm.initialBudget);
-        // BudgetService.getLocation().then(function(response){
-        //     console.log(response);
-        // })
+
 
 
         vm.initMap =(function() {
@@ -53,6 +47,16 @@
                         {lat: 42.331595, lng: -83.065400},
                         {lat: 42.331616, lng: -83.066820}
                   ]
+
+                  vm.initialBudget= BudgetService.getBudget();
+                  vm.budget= BudgetService.getUpdateBudget();
+                  console.log(vm.budget);
+                  console.log(vm.initialBudget);
+          
+                  // BudgetService.getLocation().then(function(response){
+                  //     console.log(response);
+
+
 
     }
 
