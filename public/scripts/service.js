@@ -23,7 +23,9 @@
         return budget;
     } 
 
-    function getLocation(lat, long){
+    function getLocation(locations){
+        var lat = locations.lat;
+        var long = locations.long;
         return $http({
             url: "https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+long+"&key=AIzaSyAngDeThvs8q0Pucu537zmfRT8JNA6ydbs",
             method: "GET"
