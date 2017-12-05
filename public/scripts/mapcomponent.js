@@ -3,7 +3,6 @@
     templateUrl: "map.html",
     controller: function(BudgetService){
         var vm = this;
-        function initMap() {
         vm.labels = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N"];
         vm.locations = [
             {lat: 42.331598, long: -83.065734},
@@ -22,19 +21,13 @@
             {lat: 42.331595, long: -83.065400},
             {lat: 42.331616, long: -83.066820}
         ];
+        
         vm.map = new google.maps.Map(document.getElementById('map'), {
-         center: {lat: 42.3305, lng: -83.0670},
-         zoom: 15
+          zoom: 15,
+          center: {lat:42.331598, lng:-83.065734}
         });
-        vm.markers = locations.map(function(location, i) {
-          return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-          });
-        });
-    }
-        vm.markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+        vm.labels = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N"];
+        
         vm.initialBudget= BudgetService.getBudget();
         vm.budget= BudgetService.getUpdateBudget();
         console.log(vm.budget);
