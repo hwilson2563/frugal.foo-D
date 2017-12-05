@@ -38,3 +38,11 @@
         updateBudget = updateBudget - objPrice;
         return updateBudget;
    }
+    
+
+
+    }
+    angular 
+    .module("app")
+    .factory("BudgetService", BudgetService);
+})();
