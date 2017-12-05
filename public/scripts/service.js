@@ -6,7 +6,7 @@
     return {
         setBudget: setBudget,
         getBudget: getBudget,
-        getLocation: getLocation,
+        // getLocation: getLocation,
         newBudget: newBudget,
         getUpdateBudget: getUpdateBudget
     };
@@ -23,19 +23,18 @@
         return budget;
     } 
 
-    function getLocation(locations){
-        var lat = locations.lat;
-        var long = locations.long;
-        return $http({
-            url: "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + long + "&key=AIzaSyAngDeThvs8q0Pucu537zmfRT8JNA6ydbs",
-            method: "GET"
-        }).then(function(response){
-            console.log(response.data);
-            apiData=response;
-            return apiData;
-        });
+//     function getLocation(){
 
-   }
+//         return $http({
+//             url: "https://maps.googleapis.com/maps/api/geocode/json?latlng=&key=AIzaSyAngDeThvs8q0Pucu537zmfRT8JNA6ydbs",
+//             method: "GET"
+//         }).then(function(response){
+//             console.log(response.data);
+//             apiData=response;
+//             return apiData;
+//         });
+
+//    }
    function newBudget(objPrice){
         updateBudget = updateBudget - objPrice;
         return updateBudget;
