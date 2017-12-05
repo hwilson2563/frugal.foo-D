@@ -23,9 +23,11 @@
         return budget;
     } 
 
-    function getLocation(){
+    function getLocation(locations){
+        var lat = locations.lat;
+        var long = locations.long;
         return $http({
-            url: "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyAngDeThvs8q0Pucu537zmfRT8JNA6ydbs",
+            url: "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + long + "&key=AIzaSyAngDeThvs8q0Pucu537zmfRT8JNA6ydbs",
             method: "GET"
         }).then(function(response){
             console.log(response.data);
