@@ -3,7 +3,7 @@
     templateUrl: "map.html",
     controller: function(BudgetService){
         var vm = this;
-        var locations = [
+        vm.locations = [
             {name: "ottava via", lat: 42.331598, long: -83.065734},
             {name: "Bobcat bonnies", lat: 42.331675,long: -83.070876},
             {name: "slows", lat: 42.331597, long: -83.075984},
@@ -24,9 +24,9 @@
         vm.budget= BudgetService.getUpdateBudget();
         console.log(vm.budget);
         console.log(vm.initialBudget);
-        BudgetService.getLocation(locations).then(function(response){
-            console.log(response);
-        });
+       // BudgetService.getLocation(locations).then(function(response){
+         //   console.log(response);
+       // });
 
     }
 
