@@ -1,5 +1,67 @@
+body{
+  background-color: #A6FFDB;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.navigation a{
+  padding-left: 20px;
+}
+
+/* HOME PAGE */
+.logo{
+  background-color: #B2351A;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  color:#A6FFDB;
+  font-family: 'Lucida Sans';
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.morgansMap{
+  background-color: #8F8F8F;
+  width: 90%;
+  margin-top: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.intro{
+  font-size: 32px;
+  color: #B2351A;
+  font-family: 'Lucida Sans';
+}
+
+.budgetContainer{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+
+}
+
+.budgetButtons{
+  margin-bottom: 20px;
+}
+
+.budgetInput{
+}
+/* END OF HOME PAGE */
+
+
+/* MAP PAGE */
+
 #map {
-    height: 700px;
-    width: 700px;
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
   }
+
+/* END OF MAP PAGE */
 
