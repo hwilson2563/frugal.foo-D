@@ -63,5 +63,75 @@ body{
     margin-top: 20px;
   }
 
+.progressBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+progress{
+  width: 90%;
+  height: 30px;
+}
+
+.barHeader{
+  text-align: center;
+  font-size: 32px;
+  color: #B2351A;
+  font-family: 'Lucida Sans';
+  margin-bottom:-25px;
+}
+
 /* END OF MAP PAGE */
 
+/* PROFILE PAGE */
+.profileContainer{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+/* END OF PROFILE PAGE */
+
+/* MENU PAGE OMNOMNOMNOM */
+.menuConatiner{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+
+/* END OF MENU PAGE*/
+
+/* CART PAGE */
+.itemWrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tipButtons{
+
+}
+
+.emailButton{
+
+}
+
+/* END OF CART PAGE */
+
+/* EMAIL PAGE */
+
+.emailContainer{
+
+}
+
+.emailInfo{
+
+}
+
+/* END OF EMAIL PAGE */
