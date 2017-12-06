@@ -1,7 +1,14 @@
 (function(){
     var menuComponent ={
-    //controller:
-    templateUrl: "menu.html"
+    templateUrl: "menu.html",
+    controller: function(BudgetService){
+    	var vm = this;
+    	  vm.initialBudget= BudgetService.getBudget();
+        vm.budget= BudgetService.getUpdateBudget(); 
+        vm.info = BudgetService.getInfo();
+        vm.foodList = [];
+        BudgetService.getFoodList()
+    }
 };
     angular
     .module("app")

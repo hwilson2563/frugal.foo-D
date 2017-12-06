@@ -4,17 +4,21 @@
       var updateBudget = 0;
       var apiData ="";
       var locationInfo = {};
+      var table = "";
       
       return {
         setBudget: setBudget,
         getBudget: getBudget,
-        getLocation: getLocation,
+        saveTable: saveTable,
+        getFoodList: getFoodList,
         newBudget: newBudget,
         getUpdateBudget: getUpdateBudget,
         submitInfo: submitInfo,
         getInfo: getInfo
       };
-
+      function saveTable(menu){
+        table = menu;
+      }
       function getInfo(){
           return locationInfo;
       }
@@ -38,14 +42,17 @@
       function getBudget(){
         return budget;
       } 
-      function getLocation(lat, lng){
-  //        return $http({
-  //             url: "https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng+"&key=AIzaSyClnD3HQ6uqUslLP8aorLZ53am9ggg8bHc",
-  //             method: "GET"
-  //         }).then(function(response){
-  //             console.log(response.data);
-  //        })
-  }
+      function getFoodList(){
+        console.log(table);
+        return $http({
+          url:"/goldcashgold",
+          method:"GET"
+        }).then(function(response){
+          console.log(response);
+          return response;
+        })
+      }
+     
       function newBudget(objPrice){
         updateBudget = updateBudget - objPrice;
         return updateBudget;

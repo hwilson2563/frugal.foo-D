@@ -1,10 +1,7 @@
 <div class="menuConatiner">
-<h1>MENU</h1>
+<h1>MENU of {{$ctrl.info.name}}</h1>
 <h3>Drinks</h3> <!--Toggle files-->
-    <ul>
-        <li>Good shit goes here</li>
-        <li>more good shit</li>
-    </ul>
+   <div ng-repeat="$ctrl.foodList"><button >{{$ctrl.drinks}}</button></div>
 <h3>Apps</h3>
 <h3>Sides</h3>
 <h3>Entrees</h3>

@@ -1,13 +1,12 @@
 <div class="profileContainer">
         <h1 class="resturantName">{{$ctrl.info.name}}</h1>
-        <img src="{{$ctrl.info.photos[0]}}"> 
         <div class="info">
             <a href="{{$ctrl.info.website}}">{{$ctrl.info.website}}</a> 
             <p>Phone Number: {{$ctrl.info.formatted_phone_number}}</p> 
             <p>address: {{$ctrl.info.formatted_address}}</p>
         </div>
         <div class="menubutton">
-            <button type="button" ng-click="">M E N U</button>
+            <a href="#!/menu"><button type="button">M E N U</button></a>
         </div>
     </div>
     
