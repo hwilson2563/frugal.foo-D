@@ -1,9 +1,10 @@
 <div id="map">{{$ctrl.map}}</div>
 
-<progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
-<p>${{$ctrl.budget}}</p>
+<div class="progressBar">
+    <progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
+    <p>${{$ctrl.budget}}</p>
+</div>
     
-<p>{{$ctrl.locations}}</p>
-
+<!-- <p>{{$ctrl.locations}}</p> -->
 
 <!--value needs to be a different value when user is adding and deleting items-->
