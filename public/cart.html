@@ -1,1 +1,25 @@
-<progress id = "budget" value="40" max="40"></progress>
+<div class="cartContainer">
+    <h3>Items Ordered</h3>
+        <ul class="itemWrap">
+            <li>Some weird angular expression</li><p>$dollaaa amount</p><i class="material-icons" ng-click="" hover-state>clear</i>
+        </ul>
+    <h3>Tip</h3>
+    <div class="tipButtons">
+        <button>15%</button>
+        <button>20%</button>
+        <button>25%</button>
+    </div>
+    <h3>Total: an angular expression</h3>
+    <div class="emailButton">
+        <button>EMAIL DIS</button>
+    </div>
+</div>
+
+
+
+<h6 class="barHeader">Your Budget Bar</h6>
+<div class="progressBar">
+    <progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
+    <p>${{$ctrl.budget}}</p>
+</div>
+    
