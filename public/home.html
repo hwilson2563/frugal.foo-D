@@ -1,15 +1,24 @@
 
-<div>
-<h1>What's in your pocket?</h1>
-	<div> 
+<div class="budgetContainer">
+	<div class="logo">
+		<!-- LOGO GOES HERE -->
+		<h1>Frugal FOO-D</h1>
+	</div>
+	<div class="morgansMap">
+		<!-- MAP GOES HERE -->
+		<p>Map goes here!</p>
+	</div>
+	<h1 class="intro">What's in your pocket?</h1>
+	<div class="budgetButtons"> 
 		<a href="#!/map"><button ng-click="$ctrl.submitBudget(10)" >$10</button></a>
 		<a href="#!/map"><button ng-click="$ctrl.submitBudget(20)">$20</button></a>
 		<a href="#!/map"><button ng-click="$ctrl.submitBudget(30)">$30</button></a>
 		<a href="#!/map"><button ng-click="$ctrl.submitBudget(40)">$40</button></a>
 	</div>
 
-	<div>
+	<div class="budgetInput">
 		<input type="text" name="budget" placeholder="personalized budget" ng-model="$ctrl.custom">
 		<a href="#!/map"><button ng-click="$ctrl.submitBudget($ctrl.custom)">Submit</button></a>
 	</div>
 </div>
+
