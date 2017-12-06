@@ -1,1 +1,18 @@
-<progress id = "budget" value="40" max="40"></progress>
+<div class="menuConatiner">
+<h1>MENU</h1>
+<h3>Drinks</h3> <!--Toggle files-->
+    <ul>
+        <li>Good shit goes here</li>
+        <li>more good shit</li>
+    </ul>
+<h3>Apps</h3>
+<h3>Sides</h3>
+<h3>Entrees</h3>
+
+</div>
+<h6 class="barHeader">Your Budget Bar</h6>
+<div class="progressBar">
+    <progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
+    <p>${{$ctrl.budget}}</p>
+</div>
+    
