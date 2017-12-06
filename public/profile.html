@@ -1,10 +1,18 @@
-<h1>Restaurant Name</h1>
-<img src="">
-<div class="info">
-<a href=""></a>
-<p>Phone Number</p>
-<p>address</p>
+<div class="profileContainer">
+    <h1 class="resturantName">Restaurant Name</h1>
+    <img src=""> <!--API angular expression-->
+    <div class="info">
+        <a href="">website.com</a> <!--API angular expression-->
+        <p>Phone Number</p> <!--API angular expression-->
+        <p>address</p> <!--API angular expression-->
+    </div>
+    <div class="menubutton">
+        <button type="button" ng-click="">M E N U</button>
+    </div>
 </div>
-<div class="menubutton">
-    <button type="button" ng-click=""></button>
+
+<h6 class="barHeader">Your Budget Bar</h6>
+<div class="progressBar">
+    <progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
+    <p>${{$ctrl.budget}}</p>
 </div>
