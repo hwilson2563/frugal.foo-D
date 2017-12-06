@@ -1,7 +1,7 @@
 <div class="menuConatiner">
 <h1>MENU of {{$ctrl.info.name}}</h1>
 <h3>Drinks</h3> <!--Toggle files-->
-   <div ng-repeat="$ctrl.foodList track by $index"><button >{{$ctrl.drinks}}</button></div>
+   <div ng-repeat="items in $ctrl.menu track by $index"><button >{{items.name}} ${{items.price}}</button></div>
 <h3>Apps</h3>
 <h3>Sides</h3>
 <h3>Entrees</h3>
@@ -12,4 +12,3 @@
     <progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
     <p>${{$ctrl.budget}}</p>
 </div>
-    
