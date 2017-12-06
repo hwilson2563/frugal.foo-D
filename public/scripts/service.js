@@ -1,5 +1,5 @@
 (function(){
-    function BudgetService($location){
+    function BudgetService($location, $http){
       var budget = 0;
       var updateBudget = 0;
       var apiData ="";
@@ -18,6 +18,7 @@
       };
       function saveTable(menu){
         table = menu;
+        console.log(table);
       }
       function getInfo(){
           return locationInfo;
@@ -45,7 +46,7 @@
       function getFoodList(){
         console.log(table);
         return $http({
-          url:"/goldcashgold",
+          url:"/menus/" + table,
           method:"GET"
         }).then(function(response){
           console.log(response);

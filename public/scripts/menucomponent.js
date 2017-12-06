@@ -7,7 +7,7 @@
         vm.budget= BudgetService.getUpdateBudget(); 
         vm.info = BudgetService.getInfo();
         vm.foodList = [];
-        BudgetService.getFoodList()
+        BudgetService.getFoodList();
     }
 };
     angular
