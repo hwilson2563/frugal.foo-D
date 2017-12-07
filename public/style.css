@@ -20,12 +20,12 @@ li {
   padding: 14px 3px;
   text-align: center;
 }
-a {
+li a {
   text-decoration: none;
   color: #2cb280;
   padding: 14px;
 }
-a:hover {
+li a:hover {
   color:#b2351a;
   background-color: rgb(236, 250, 244);
 }
@@ -38,7 +38,8 @@ a:hover {
 #ffd {
  width: 60%;
  height: 60%;
- 
+ display: block;
+ z-index: 1;
 }
 .map {
   display: flex;
@@ -47,6 +48,8 @@ a:hover {
 #mymap {
   width: 80%;
   height: 80%;
+  display: block;
+  z-index: 0;
 }
 .intro{
   font-size: 20px;
@@ -66,7 +69,8 @@ a:hover {
   margin-bottom: 20px;
 }
 button {
-  padding: 10px 15px;
+  padding: 10px 20px;
+  margin: -5px 5px;
   border-radius: 10px;
   background-color: #a6ffdb;
   font-family: "Barlow Condensed";
@@ -112,6 +116,8 @@ input {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  font-family: "Barlow Condensed";
+  padding: 20px;
 }
 progress{
   width: 90%;
@@ -120,9 +126,9 @@ progress{
 
 .barHeader{
   text-align: center;
-  font-size: 32px;
+  font-size: 20px;
   color: #B2351A;
-  font-family: 'Lucida Sans';
+  font-family: 'Oswald';
   margin-bottom:-25px;
 }
 
@@ -147,6 +153,7 @@ progress{
 }
 
 
+
 /* END OF MENU PAGE*/
 
 /* CART PAGE */
@@ -157,6 +164,10 @@ progress{
   align-items: center;
 }
 
+h3 {
+  font-family: "Barlow Condensed";
+  color:#b2351a;
+}
 .tipButtons{
 
 }
