@@ -5,6 +5,7 @@
       var apiData ="";
       var locationInfo = {};
       var table = "";
+      var cart = [];
       
       return {
         setBudget: setBudget,
@@ -14,8 +15,17 @@
         newBudget: newBudget,
         getUpdateBudget: getUpdateBudget,
         submitInfo: submitInfo,
-        getInfo: getInfo
+        getInfo: getInfo,
+        addCart: addCart
       };
+
+      function addCart (item){
+        updateBudget = updateBudget - item.price;
+        cart.push(item);
+        console.log(updateBudget)
+        // return updateBudget;
+      }
+
       function saveTable(menu){
         table = menu;
         console.log(table);
