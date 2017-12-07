@@ -3,23 +3,25 @@
     templateUrl: "menu.html",
     controller: function(BudgetService){
         var vm = this;
-        vm.menu={};
+        vm.menu=[];
     	vm.initialBudget= BudgetService.getBudget();
         vm.budget= BudgetService.getUpdateBudget(); 
         vm.info = BudgetService.getInfo();
-        vm.foodList = [];
+     
+
         BudgetService.getFoodList().then(function(response){
             vm.menu = response.data;
+            console.log(vm.menu);
         });
 
         vm.add = function(addItem) {
             console.log(addItem);
             BudgetService.addCart(addItem);
             vm.budget= BudgetService.getUpdateBudget();
-
             if(vm.budget <= 0){
-                console.log("over budget");
-                
+                document.getElementById("overbudget").style.display = "block";
+                BudgetService.removeCart(addItem);
+                vm.budget= BudgetService.getUpdateBudget();
             }
         };
 
