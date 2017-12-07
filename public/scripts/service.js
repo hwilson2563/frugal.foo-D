@@ -1,4 +1,4 @@
- (function(){
+(function(){
     function BudgetService($location, $http){
       var budget = 0;
       var updateBudget = 0;
@@ -14,14 +14,14 @@
         getBudget: getBudget,
         saveTable: saveTable,
         getFoodList: getFoodList,
-        newBudget: newBudget,
         getUpdateBudget: getUpdateBudget,
         submitInfo: submitInfo,
         getInfo: getInfo,
         addCart: addCart,
         getCart: getCart,
         deleteFood: deleteFood,
-        getPhoto: getPhoto
+        getPhoto: getPhoto,
+        removeCart: removeCart
       };
       function getPhoto(){
         return picture;
@@ -33,7 +33,12 @@
       function getCart(){
         return cart;
       }
-
+    function removeCart (item){
+        updateBudget = updateBudget + item.price;
+        cart.pop(item);
+        console.log(updateBudget)
+        // return updateBudget;
+      }
       function addCart (item){
         updateBudget = updateBudget - item.price;
         cart.push(item);
@@ -79,14 +84,11 @@
           return response;
         })
       }
-     
-      function newBudget(objPrice){
-        updateBudget = updateBudget - objPrice;
-        return updateBudget;
-      } 
+    
     }
     
     angular 
       .module("app")
       .factory("BudgetService", BudgetService);
   })();
+
