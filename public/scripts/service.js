@@ -7,7 +7,7 @@
       var table = "";
       var cart = [];
       var picture = "";
-      
+      var tip = 0;
       
       return {
         setBudget: setBudget,
@@ -21,8 +21,16 @@
         getCart: getCart,
         deleteFood: deleteFood,
         getPhoto: getPhoto,
-        removeCart: removeCart
+        removeCart: removeCart,
+        saveTip: saveTip,
+        getTip: getTip
       };
+      function getTip(){
+        return tip;
+      }
+      function saveTip(amount){
+        tip = amount;
+      }
       function getPhoto(){
         return picture;
       }

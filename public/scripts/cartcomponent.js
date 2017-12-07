@@ -18,16 +18,19 @@
           document.getElementById("tipbar").style.display = "block";
           var total = vm.initialBudget-vm.budget ;
            vm.tip=( total * .15);
+           BudgetService.saveTip(vm.tip);
         };
         vm.tipTwo =function(){
             document.getElementById("tipbar").style.display = "block";
             var total = vm.initialBudget-vm.budget ;
            vm.tip=( total * .20);
+           BudgetService.saveTip(vm.tip);
         };        
         vm.tipThree =function(){
             document.getElementById("tipbar").style.display = "block";
              var total = vm.initialBudget-vm.budget ;
            vm.tip=( total * .25);
+           BudgetService.saveTip(vm.tip);
         };
     }
 };
