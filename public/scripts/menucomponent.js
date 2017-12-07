@@ -11,6 +11,21 @@
         BudgetService.getFoodList().then(function(response){
             vm.menu = response.data;
         });
+
+        vm.add = function(addItem) {
+            console.log(addItem);
+            BudgetService.addCart(addItem);
+            vm.budget= BudgetService.getUpdateBudget();
+
+            if(vm.budget <= 0){
+                console.log("over budget");
+            }
+            // .then(function(response) {
+            //   $ctrl.itemAdded = response.data.price;
+            // });
+        };
+
+
     }
 };
     angular
