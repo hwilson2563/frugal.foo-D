@@ -1,17 +1,23 @@
 <div class="menuConatiner">
-<h1>MENU of {{$ctrl.info.name}}</h1>
-<h3>Apps</h3>
-<div ng-repeat="item in $ctrl.menu track by $index" ng-show="item.type === 'appetizer'">
-   <span>{{item.name}}</span><span>${{item.price}}</span><button ng-click="$ctrl.add(item);" >add</button>
-   </div>
-<h3>Sides</h3>
-<div ng-repeat="item in $ctrl.menu track by $index" ng-show="item.type === 'side dish'">
-   <span>{{item.name}}</span><span>${{item.price}}</span><button ng-click="$ctrl.add(item);" >add</button>
-   </div>
-<h3>Entrees</h3>
-<div ng-repeat="item in $ctrl.menu track by $index" ng-show="item.type === 'main dish'">
-   <span>{{item.name}}</span><span>${{item.price}}</span> <button ng-click="$ctrl.add(item);" >add</button>
-   </div>
+  <h1>MENU of {{$ctrl.info.name}}</h1>
+    <div class="typeFood">
+      <h3>Apps</h3>
+        <div class="menuitems" ng-repeat="item in $ctrl.menu track by $index" ng-show="item.type === 'appetizer'">
+        <span>{{item.name}}</span><span>${{item.price}}</span><button class="add" ng-click="$ctrl.add(item);" >add</button>
+       </div>
+     </div>
+    <div class="typeFood">
+    <h3>Sides</h3>
+      <div  class="menuitems" ng-repeat="item in $ctrl.menu track by $index" ng-show="item.type === 'side dish'">
+       <span>{{item.name}}</span><span>${{item.price}}</span><button class="add"  ng-click="$ctrl.add(item);" >add</button>
+       </div>
+    </div>
+    <div class="typeFood">
+      <h3>Entrees</h3>
+        <div  class="menuitems" ng-repeat="item in $ctrl.menu track by $index" ng-show="item.type === 'main dish'">
+        <span>{{item.name}}</span><span>${{item.price}}</span> <button  class="add" ng-click="$ctrl.add(item);" >add</button>
+        </div>
+     </div>
 </div>
 <h6 class="barHeader">Your Budget Bar</h6>
 <div class="progressBar">
