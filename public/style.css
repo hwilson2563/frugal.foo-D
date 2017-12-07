@@ -49,7 +49,7 @@ a:hover {
 .intro{
   font-size: 32px;
   color: #B2351A;
-  font-family: 'Lucida Sans';
+  font-family: 'Oswald';
 }
 
 .budgetContainer{
@@ -63,8 +63,31 @@ a:hover {
 .budgetButtons{
   margin-bottom: 20px;
 }
+button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #a6ffdb;
+  font-family: "Barlow Condensed";
+  font-size: 15px;
+  border: none;
+  color: #2cb280;
+}
 
+button:hover {
+  color:#b2351a;
+
+}
 .budgetInput{
+  padding: 5px;
+}
+input {
+  background-color: #a6ffdb;
+  padding: 10px;
+  border: none;
+  color:#b2351a;
+}
+placeholder {
+    color: #2cb280;
 }
 /* END OF HOME PAGE */
 
