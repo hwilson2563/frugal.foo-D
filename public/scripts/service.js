@@ -7,6 +7,7 @@
       var table = "";
       var cart = [];
       
+      
       return {
         setBudget: setBudget,
         getBudget: getBudget,
@@ -16,8 +17,18 @@
         getUpdateBudget: getUpdateBudget,
         submitInfo: submitInfo,
         getInfo: getInfo,
-        addCart: addCart
+        addCart: addCart,
+        getCart: getCart,
+        deleteFood: deleteFood
       };
+
+      function deleteFood(index){
+          updateBudget = updateBudget + index.price;
+      }
+
+      function getCart(){
+        return cart;
+      }
 
       function addCart (item){
         updateBudget = updateBudget - item.price;
