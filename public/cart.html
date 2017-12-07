@@ -1,7 +1,7 @@
 <div class="cartContainer">
     <h3>Items Ordered</h3>
-        <ul class="itemWrap">
-            <li>Some weird angular expression</li><p>$dollaaa amount</p><i class="material-icons" ng-click="" hover-state>clear</i>
+        <ul class="itemWrap" ng-repeat="items in $ctrl.tab track by $index">
+            <li>{{items.name}} </li><p>${{items.price}}</p><i class="material-icons" ng-click="$ctrl.remove($index,items);" hover-state>clear</i>
         </ul>
     <h3>Tip</h3>
     <div class="tipButtons">
