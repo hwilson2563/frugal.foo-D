@@ -19,10 +19,8 @@
 
             if(vm.budget <= 0){
                 console.log("over budget");
+                
             }
-            // .then(function(response) {
-            //   $ctrl.itemAdded = response.data.price;
-            // });
         };
 
 
