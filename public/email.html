@@ -3,14 +3,17 @@
 <div class="emailContainer">
 
     <div class="emailInfo">
-        <input type="text" ng-model="" placeholder="Email Address">
-        <p>Budget: </p>
-        <p>Total: </p>
-        <p> Items Ordered</p>
-        <input type="textarea" ng-model="" placeholder="Leave a comment!">
-        <button type="button" ng-click="">Send</button>
+        <form >
+            <input type="text"  placeholder="Email Address">
+            <p>Budget: </p>
+            <p>Total: </p>
+            <p> Items Ordered</p>
+            <input type="textarea"  placeholder="Leave a comment!">
+            <button type="button" ng-click="$ctrl.sendEmail();" >Send</button>
+        </form>
     </div>
 
 
 </div>
+
 
