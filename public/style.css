@@ -1,37 +1,51 @@
 body{
-  background-color: #A6FFDB;
+  background-color: rgb(236, 250, 244);
 }
-.navigation {
+.nav {
+  height: 15%;
+  background-color: #a6ffdb;
+  margin: 1rem;
+}
+ul {
+  list-style-type: none;
+  font-family: sans-serif;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
+  margin: 0;
+  flex-direction: row;
 }
-.navigation a{
-  padding-left: 20px;
+li {
+  padding: 14px 3px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #2cb280;
+  padding: 14px;
+}
+a:hover {
+  color:#b2351a;
+  background-color: rgb(236, 250, 244);
 }
 
 /* HOME PAGE */
-.logo{
-  background-color: #B2351A;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  color:#A6FFDB;
-  font-family: 'Lucida Sans';
-  text-align: center;
+.logo {
   display: flex;
-  align-items: center;
-  padding: 10px;
+  justify-content: center;
 }
-
-.morgansMap{
-  background-color: #8F8F8F;
-  width: 90%;
-  margin-top: 20px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+#ffd {
+ width: 60%;
+ height: 60%;
+ 
 }
-
+.map {
+  display: flex;
+  justify-content: center;
+}
+#mymap {
+  width: 80%;
+  height: 80%;
+}
 .intro{
   font-size: 32px;
   color: #B2351A;
