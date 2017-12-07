@@ -1,4 +1,4 @@
-(function(){
+ (function(){
     function BudgetService($location, $http){
       var budget = 0;
       var updateBudget = 0;
@@ -6,6 +6,7 @@
       var locationInfo = {};
       var table = "";
       var cart = [];
+      var picture = "";
       
       
       return {
@@ -19,9 +20,12 @@
         getInfo: getInfo,
         addCart: addCart,
         getCart: getCart,
-        deleteFood: deleteFood
+        deleteFood: deleteFood,
+        getPhoto: getPhoto
       };
-
+      function getPhoto(){
+        return picture;
+      }
       function deleteFood(index){
           updateBudget = updateBudget + index.price;
       }
@@ -37,9 +41,10 @@
         // return updateBudget;
       }
 
-      function saveTable(menu){
+      function saveTable(menu, img){
+        picture = img;
         table = menu;
-        console.log(table);
+        console.log(table, picture);
       }
       function getInfo(){
           return locationInfo;
