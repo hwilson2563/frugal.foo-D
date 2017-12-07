@@ -5,9 +5,10 @@
         </ul>
     <h3>Tip</h3>
     <div class="tipButtons">
-        <button>15%</button>
-        <button>20%</button>
-        <button>25%</button>
+        <button ng-click="$ctrl.tipOne()">15%</button>
+        <button ng-click="$ctrl.tipTwo()">20%</button>
+        <button ng-click="$ctrl.tipThree()">25%</button>
+        <div id="tipbar">${{$ctrl.tip}}</div>
     </div>
     <h3>Total: an angular expression</h3>
     <div class="emailButton">
