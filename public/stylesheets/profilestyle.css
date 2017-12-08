@@ -1,3 +1,13 @@
+.restaurantshit {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.restaurantname {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .profileContainer{
     display: flex;
     flex-direction: column;
@@ -5,12 +15,15 @@
     align-items: center;
   }
   .picture {
-    width: 70%;
-    height: 70%;
-   
+    width: 50%;
+    height: 50%;
+    margin: auto;
   }
-  p, a {
+  .address, .link, .number {
     font-family: "Barlow Condensed";
+    display: block;
+    text-align: center;
+    padding: 5px;
   }
   a {
     text-decoration: none;
@@ -19,3 +32,8 @@
     font-family: "Oswald";
     color: #B2351A;
   }
+  .menubutton {
+    display: flex;
+    justify-content: center;
+  }
+
