@@ -5,7 +5,13 @@ body{
   height: 15%;
   background-color: #a6ffdb;
   margin: 1rem;
+  border-radius: 5px;
 }
+
+button{
+  cursor:pointer;
+}
+
 ul {
   list-style-type: none;
   font-family: sans-serif;
