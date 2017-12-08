@@ -1,25 +1,63 @@
 .menuConatiner{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-  }
-  .typeFood{
-    display: flex;
-    flex-direction: column;
-    
-    background: #FF7658;
-    padding: 10px;
-    border-radius: 10px;
-    width: 100%;
-  }
-  .add {
-    float: right;
-  }
-  .menuitems {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  font-family: "Barlow Condensed";
+}
+.typeFood{
+  display: flex;
+  flex-direction: column;
+  background: #FF7658;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  opacity: 50%;
+  margin-bottom: 10px;
+}
+.add {
+  float: right;
+}
+.menuitems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #58FFC1;
+  background-color: #2CB280;
+}
+.menuitems .add {
+  color:#2CB280;
+  background-color:  #58FFC1;
+}
+.over {
+  color:#FF7658 ;
+  background-color: #B2351A;
+  padding: 10px;
+  border-radius: 10px;
+}
+.over .add{
+  color:#B2351A ;
+  background-color: #FF7658;
+  cursor: not-allowed;
+}
+#overbudget {
+  background-color: rgb(236, 250, 244);
+  width: 100%;
+  height: 800px;
+  border-radius: 10px;
+  font-family:"Barlow Condensed";
+  font-size: 30px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+#overbudget button {
+  margin-top: 10px;
+}
+#overbudget div {
+  display: flex;
+  justify-content: center;
+}
