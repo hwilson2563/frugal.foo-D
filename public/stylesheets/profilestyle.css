@@ -1,0 +1,21 @@
+.profileContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+  .picture {
+    width: 70%;
+    height: 70%;
+   
+  }
+  p, a {
+    font-family: "Barlow Condensed";
+  }
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    font-family: "Oswald";
+    color: #B2351A;
+  }

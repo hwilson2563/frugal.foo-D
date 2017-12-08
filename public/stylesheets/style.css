@@ -1,0 +1,32 @@
+body{
+  background-color: rgb(236, 250, 244);
+}
+.nav {
+  height: 15%;
+  background-color: #a6ffdb;
+  margin: 1rem;
+}
+ul {
+  list-style-type: none;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  flex-direction: row;
+  font-family: "Barlow Condensed";
+  font-size: 18px;
+}
+li {
+  padding: 14px 3px;
+  text-align: center;
+}
+li a {
+  text-decoration: none;
+  color: #2cb280;
+  padding: 14px;
+}
+li a:hover {
+  color:#b2351a;
+  background-color: rgb(236, 250, 244);
+}
+

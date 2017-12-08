@@ -1,0 +1,25 @@
+.menuConatiner{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+  .typeFood{
+    display: flex;
+    flex-direction: column;
+    
+    background: #FF7658;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .add {
+    float: right;
+  }
+  .menuitems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  

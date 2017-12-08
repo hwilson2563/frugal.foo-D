@@ -1,0 +1,27 @@
+#map {
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+.progressBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-family: "Barlow Condensed";
+  padding: 20px;
+}
+progress{
+  width: 90%;
+  height: 30px;
+}
+
+.barHeader{
+  text-align: center;
+  font-size: 20px;
+  color: #B2351A;
+  font-family: 'Oswald';
+  margin-bottom:-25px;
+}
