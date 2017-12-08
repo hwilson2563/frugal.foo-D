@@ -4,17 +4,16 @@
 
     <div class="emailInfo">
         <form >
-            <input type="text"  placeholder="Email Address">
+            <input type="text" ng-model="$ctrl.userEmail" placeholder="Email Address">
             <p>Budget: ${{$ctrl.initialBudget}}</p>
             <p>Total:$ {{$ctrl.total}}</p>
             <p> Items Ordered: 
                 <ul class="itemWrap" ng-repeat="items in $ctrl.tab track by $index">
-                    <li>{{items.name}} ${{items.price}}</li>
-
+                    <li>{{items.name}} ${{items.price}}</li>                                                                 
                 </ul>
             </p>
-            <input type="textarea"  placeholder="Leave a comment!">
-            <button type="button" ng-click="$ctrl.sendEmail();" >Send</button>
+            <input type="textarea" ng-model="$ctrl.comment" placeholder="Leave a comment!">
+            <button type="button" ng-click="$ctrl.sendEmail($ctrl.userEmail, $ctrl.comment, $ctrl.total, $ctrl.initialBudget);" >Send</button>
         </form>
     </div>
 
