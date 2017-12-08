@@ -1,18 +1,20 @@
 <div class="cartContainer">
-    <h3>Items Ordered</h3>
+    <h3 class="itemsOrdered">Items Ordered<i class="material-icons" id="iconSwing">restaurant</i></h3>
+
         <ul class="itemWrap" ng-repeat="items in $ctrl.tab track by $index">
-            <li>{{items.name}} </li><p>${{items.price}}</p><i class="material-icons" ng-click="$ctrl.remove($index,items);" hover-state>clear</i>
+            <li>{{items.name}} ${{items.price}}</li><i class="material-icons" ng-click="$ctrl.remove($index,items);">clear</i>
         </ul>
-    <h3>Tip</h3>
+
+    <h3 class="tipHeader">Add a Tip</h3>
     <div class="tipButtons">
         <button ng-click="$ctrl.tipOne()">15%</button>
         <button ng-click="$ctrl.tipTwo()">20%</button>
         <button ng-click="$ctrl.tipThree()">25%</button>
-        <div id="tipbar">${{$ctrl.tip}}</div>
     </div>
-    <h3>Total: $ {{$ctrl.initialBudget - $ctrl.budget}}</h3>
+    <div id="tipbar">${{$ctrl.tip}}</div>
+    <h3 class="totalHeader">Total: $ {{$ctrl.initialBudget - $ctrl.budget}}</h3>
     <div class="emailButton">
-        <a href="#!/email"><button>EMAIL DIS</button></a>
+        <a href="#!/email"><button>EMAIL YOUR ORDER</button></a>
     </div>
 </div>
 
@@ -23,5 +25,4 @@
     <progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
     <p>${{$ctrl.budget}}</p>
 </div>
-    
 
