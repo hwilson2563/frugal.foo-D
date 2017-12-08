@@ -35,6 +35,19 @@
             console.log(addItem);
             BudgetService.addCart(addItem);
             vm.budget= BudgetService.getUpdateBudget();
+            BudgetService.getFoodList().then(function(response) {
+            vm.menu = response.data;
+            vm.menu.forEach(function(item){
+                if(item.price > vm.budget){
+                    console.log(item);
+                    vm.overBudgetItems.push(item);
+                    item.over = "over";
+                    console.log(item);
+                }
+
+            })
+        
+        });
             if(vm.budget < 0){
                 document.getElementById("overbudget").style.display = "block";
                 BudgetService.removeCart(addItem);
@@ -58,4 +71,3 @@
     .module("app")
     .component("menuComponent", menuComponent);
 })();
-
