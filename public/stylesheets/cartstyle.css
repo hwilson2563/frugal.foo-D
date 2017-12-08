@@ -1,0 +1,27 @@
+.itemWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h3 {
+    font-family: "Barlow Condensed";
+    color:#b2351a;
+  }
+  .tipButtons{
+  
+  }
+  
+  .emailButton{
+  
+  }
+
+  .emailContainer{
+    
+    }
+    
+    .emailInfo{
+    
+    }
+    
