@@ -1,16 +1,16 @@
-<div class="profileContainer">
-        <h1 class="resturantName">{{$ctrl.info.name}}</h1>
+<h1 class="restaurantname">{{$ctrl.info.name}}</h1>
+
+<div class="restaurantshit">
+        <img class="picture" src="{{$ctrl.img}}">
+        </div>
         <div class="info">
-            <img src="{{$ctrl.img}}">
-            <a href="{{$ctrl.info.website}}">{{$ctrl.info.website}}</a> 
-            <p>Phone Number: {{$ctrl.info.formatted_phone_number}}</p> 
-            <p>address: {{$ctrl.info.formatted_address}}</p>
+            <a class="link" href="{{$ctrl.info.website}}">{{$ctrl.info.website}}</a> 
+            <p class="number">Phone Number: {{$ctrl.info.formatted_phone_number}}</p> 
+            <p class="address">address: {{$ctrl.info.formatted_address}}</p>
         </div>
         <div class="menubutton">
             <a href="#!/menu"><button type="button">M E N U</button></a>
         </div>
-    </div>
-    
     <h6 class="barHeader">Your Budget Bar</h6>
     <div class="progressBar">
         <progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
