@@ -13,11 +13,15 @@
                 </ul>
             </p>
             <input type="textarea" ng-model="$ctrl.comment" placeholder="Leave a comment!">
-            <button type="button" ng-click="$ctrl.sendEmail($ctrl.userEmail, $ctrl.comment, $ctrl.total, $ctrl.initialBudget);" >Send</button>
+            <a href="#!/home">
+                <button type="button" ng-click="$ctrl.sendEmail($ctrl.userEmail, $ctrl.comment, $ctrl.total, $ctrl.initialBudget);" >Send</button>
+            </a>
         </form>
     </div>
 
 
 </div>
+
+
 
 
