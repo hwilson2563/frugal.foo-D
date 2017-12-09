@@ -6,7 +6,18 @@ body{
   background-color: #a6ffdb;
   margin: 1rem;
   border-radius: 5px;
+  position: relative;
+
 }
+
+.navtitle {
+  color:#b2351a;
+  font-family: "Oswald";
+  text-align: left;
+  position: absolute;
+  left: 10px;
+}
+
 
 button{
   cursor:pointer;
@@ -35,4 +46,6 @@ li a:hover {
   color:#b2351a;
   background-color: rgb(236, 250, 244);
 }
-
+ #budget {
+   margin-top: -30px;
+ }
