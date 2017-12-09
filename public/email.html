@@ -1,8 +1,9 @@
-<h1>Email</h1>
+
 
 <div class="emailContainer">
-
-    <div class="emailInfo">
+       
+    <div class="emailinfo">
+            <h1>EMAIL</h1>
         <form >
             <input type="text" ng-model="$ctrl.userEmail" placeholder="Email Address">
             <p>Budget: ${{$ctrl.initialBudget}}</p>
@@ -14,14 +15,11 @@
             </p>
             <input type="textarea" ng-model="$ctrl.comment" placeholder="Leave a comment!">
             <a href="#!/home">
-                <button type="button" ng-click="$ctrl.sendEmail($ctrl.userEmail, $ctrl.comment, $ctrl.total, $ctrl.initialBudget);" >Send</button>
+                <button type="button" ng-click="$ctrl.sendEmail($ctrl.userEmail, $ctrl.comment, $ctrl.total, $ctrl.initialBudget);" >SEND </button>
             </a>
         </form>
     </div>
 
 
 </div>
-
-
-
 
