@@ -1,1 +1,44 @@
-/*email stylesheet*/
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: "Oswald";
+    margin-top: 5px;
+}
+
+.emailinfo {
+    background-color: white;
+    width: 300px;
+    height: 320px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 0px 5px 5px 0px lightgray;
+    text-align: center;
+    margin-top: 50px;
+}
+.emailinfo p {
+    font-family: "Barlow Condensed";
+    color: #2cb280;
+    text-align: left;
+    margin-left: 10px;
+}
+.emailinfo input {
+    width: 90%;
+
+}
+.emailinfo button {
+margin: 15px 0px;
+border: 1px solid #2cb280;
+padding: 5px 15px;
+font-size: 15px;
+width: 35%;
+}
+
+.emailinfo button:hover {
+    border: 1px solid#b2351a;
+}
+
+.emailinfo input::-webkit-input-placeholder {
+    color: #2cb280;
+    font-size: 16px;
+}
