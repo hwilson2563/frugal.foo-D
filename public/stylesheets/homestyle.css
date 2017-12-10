@@ -1,14 +1,75 @@
 /* HOME PAGE */
+.images {
+  text-align: center;
+}
+#mymap {
+  width: 100%;
+  height: auto;
+}
+  .budgetcontainer{
+    font-size: 15px;
+    color: #B2351A;
+    font-family: 'Oswald';
+    display: flex;
+    justify-content: center;
+  } 
+
+.moneybuttons {
+  display: flex;
+  justify-content: center;
+
+}
+.choosebudget {
+  display: flex;
+  justify-content: center;
+
+}
+  input {
+    background-color: #a6ffdb;
+    padding: 10px;
+    border: none;
+    color:#b2351a;
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+  }
+
+  .choosebudget input::-webkit-input-placeholder {
+      color: #2cb280;
+      font-size: 16px;
+  }
+
+  .budgetButtons{
+    margin-bottom: 20px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    margin: -5px 5px;
+    border-radius: 10px;
+    background-color: #a6ffdb;
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    border: none;
+    color: #2cb280;
+  }
+  
+  button:hover {
+    color:#b2351a;
+  }
+  .choosebudget {
+    margin-top: 20px;
+  }
+
+
 
 #ffd {
   position: relative;
   top: 10px;
-  margin-left: 25%;
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
   z-index: 3;
     
-    animation: logoanimation linear 0.7s;
+animation: logoanimation linear 0.7s;
 animation-iteration-count: 1;
 transform-origin: 50% 50%;
 -webkit-animation: logoanimation linear 0.7s;
@@ -79,64 +140,19 @@ transform-origin: 50% 50%;
  -ms-transform:  rotate(0deg) ;
 }
     
-    
-    
  }
 
-#mymap {
-  width: 100%;
-  height: auto;
+
+  @media screen and (min-width: 450px) {
+ #ffd {
+width: 50%;
+height: 50%;
+  }
+
+  }
+@media screen and (min-width: 650px){
+  #ffd {
+    height: 40%;
+    width: 40%;
+  }
 }
-  .budgetcontainer{
-    font-size: 15px;
-    color: #B2351A;
-    font-family: 'Oswald';
-    display: flex;
-    justify-content: center;
-  } 
-
-.moneybuttons {
-  display: flex;
-  justify-content: center;
-
-}
-.choosebudget {
-  display: flex;
-  justify-content: center;
-
-}
-  input {
-    background-color: #a6ffdb;
-    padding: 10px;
-    border: none;
-    color:#b2351a;
-    font-family: "Barlow Condensed";
-    font-size: 16px;
-  }
-
-  .choosebudget input::-webkit-input-placeholder {
-      color: #2cb280;
-      font-size: 16px;
-  }
-
-  .budgetButtons{
-    margin-bottom: 20px;
-  }
-
-  button {
-    padding: 10px 20px;
-    margin: -5px 5px;
-    border-radius: 10px;
-    background-color: #a6ffdb;
-    font-family: "Barlow Condensed";
-    font-size: 18px;
-    border: none;
-    color: #2cb280;
-  }
-  
-  button:hover {
-    color:#b2351a;
-  }
-  .choosebudget {
-    margin-top: 20px;
-  }
