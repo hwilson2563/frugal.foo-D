@@ -29,9 +29,7 @@
 #mymap {
  height: 10rem;
 }
-#ffd {
-  width: 70%;
-}
+
 .budgetcontainer{
     font-size: 15px;
     color: #B2351A;
@@ -86,7 +84,9 @@
     margin-top: 20px;
   }
 
-
+#ffd:hover{
+opacity: .5;
+}
 
 #ffd {
   position: relative;
