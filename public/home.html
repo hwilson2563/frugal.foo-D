@@ -2,19 +2,19 @@
 
 	<div class="images">
 		<img id="ffd" src="images/fflogo.png">
-<!-- <img id="mymap" src="images/corktownmap.png">  -->
+ <!-- <img id="mymap" src="images/corktownmap.png">   -->
 	</div>
 
 	<div class="budgetcontainer">
 			<h1>WHAT'S IN YOUR POCKET?</h1>
 			</div>
 			<div class="moneybuttons">
-		<a href="#!/map"><button ng-click="$ctrl.submitBudget(10)" >$10</button></a>
-		<a href="#!/map"><button ng-click="$ctrl.submitBudget(20)">$20</button></a>
-		<a href="#!/map"><button ng-click="$ctrl.submitBudget(30)">$30</button></a>
-		<a href="#!/map"><button ng-click="$ctrl.submitBudget(40)">$40</button></a>
+		<a href="#!/map"><button class="button" ng-click="$ctrl.submitBudget(10)" >$10</button></a>
+		<a href="#!/map"><button class="button" ng-click="$ctrl.submitBudget(20)">$20</button></a>
+		<a href="#!/map"><button class="button" ng-click="$ctrl.submitBudget(30)">$30</button></a>
+		<a href="#!/map"><button class="button" ng-click="$ctrl.submitBudget(40)">$40</button></a>
 			</div>
 	<div class= "choosebudget">
-		<input type="text" name="budget" placeholder="personalized budget" ng-model="$ctrl.custom">
-		<a href="#!/map"><button ng-click="$ctrl.submitBudget($ctrl.custom)">Submit</button></a>
+		<input type="number" name="budget" placeholder="personalized budget" ng-model="$ctrl.custom">
+		<a href="#!/map"><button class="button" ng-click="$ctrl.submitBudget($ctrl.custom)">SUBMIT</button></a>
 		</div>
