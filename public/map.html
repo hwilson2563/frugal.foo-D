@@ -1,9 +1,11 @@
-<div id="map">{{$ctrl.map}}</div>
 
+<div id="map">{{$ctrl.map}}</div>
+<div class="progressinfo">
 <h6 class="barHeader">YOUR BUDGET BAR</h6>
 <div class="progressBar">
     <progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
     <p>${{$ctrl.budget}}</p>
+</div>
 </div>
     
 <!-- <p>{{$ctrl.locations}}</p> -->

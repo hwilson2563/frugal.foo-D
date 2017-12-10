@@ -19,10 +19,12 @@
         </div>
      </div>
 </div>
-<h6 class="barHeader">Your Budget Bar</h6>
+<div class="progressinfo">
+<h6 class="barHeader">YOUR BUDGET BAR</h6>
 <div class="progressBar">
     <progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
     <p>${{$ctrl.budget}}</p>
+</div>
 </div>
 <div id="overbudget">
   <div>	You have gone over your set budget! Would you like to adjust the budget? <br> </div>

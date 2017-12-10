@@ -6,6 +6,7 @@
   margin: auto;
   padding: 20px;
   text-align: center;
+  margin-bottom: 200px;
 }
 .restaurantname {
   text-align: center;
@@ -46,4 +47,11 @@
     display: flex;
     justify-content: center;
   }
+  .progressinfo {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+}
+
 
