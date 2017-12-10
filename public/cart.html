@@ -6,14 +6,14 @@
         </ul>
     <h3 class="tipHeader">ADD A TIP</h3>
     <div class="tipButtons">
-        <button ng-click="$ctrl.tipOne()">15%</button>
-        <button ng-click="$ctrl.tipTwo()">20%</button>
-        <button ng-click="$ctrl.tipThree()">25%</button>
+        <button class="button" ng-click="$ctrl.tipOne()">15%</button>
+        <button class="button" ng-click="$ctrl.tipTwo()">20%</button>
+        <button class="button" ng-click="$ctrl.tipThree()">25%</button>
     </div>
     <div id="tipbar">${{$ctrl.tip}}</div>
     <h3 class="totalHeader">TOTAL: $ {{$ctrl.initialBudget - $ctrl.budget}}</h3>
     <div class="emailButton">
-        <a href="#!/email"><button>EMAIL YOUR ORDER</button></a>
+        <a href="#!/email"><button class="button">EMAIL YOUR ORDER</button></a>
     </div>
 </div>
 
