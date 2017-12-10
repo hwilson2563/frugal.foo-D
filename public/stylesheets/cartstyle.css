@@ -18,7 +18,9 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+.itemWrap li {
+  color: #2cb280;
+}
 .material-icons{
   cursor: pointer;
 }
@@ -57,7 +59,7 @@ h3 {
   font-size: 18px;
   border: none;
   color: #2cb280;
-  width: 40px;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
@@ -194,3 +196,9 @@ justify-content: center;
   }
 }
     
+@media screen and (min-width: 450px) {
+  .cartContainer {
+    width: 50%;
+    height: auto;
+  }
+}
