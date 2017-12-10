@@ -1,8 +1,8 @@
 <div class="cartContainer">
     <h3 class="itemsOrdered">ITEMS ORDERED<i class="material-icons" id="iconSwing">restaurant</i></h3>
 
-        <ul class="itemWrap" ng-repeat="items in $ctrl.tab track by $index">
-            <li>{{items.name}} ${{items.price}}</li><i class="material-icons" ng-click="$ctrl.remove($index,items);">clear</i>
+         <ul class="itemWrap" ng-repeat="items in $ctrl.tab track by $index">
+            <li>Place: {{items.restaurant}} Item: {{items.name}} Price: $ {{items.price}}</li><i class="material-icons" ng-click="$ctrl.remove($index,items);">clear</i>
         </ul>
     <h3 class="tipHeader">ADD A TIP</h3>
     <div class="tipButtons">
