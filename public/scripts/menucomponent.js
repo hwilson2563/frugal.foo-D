@@ -32,6 +32,8 @@
         });
 
         vm.add = function(addItem) {
+            
+           addItem.restaurant = vm.info.name;
             console.log(addItem);
             BudgetService.addCart(addItem);
             vm.budget= BudgetService.getUpdateBudget();
