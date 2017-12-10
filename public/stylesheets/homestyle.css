@@ -1,12 +1,38 @@
 /* HOME PAGE */
 .images {
-  text-align: center;
+  position: relative;
+  height: 20rem;
 }
+.images div{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  
+}
+
+.imageone{
+  z-index: 20;
+}
+.imagetwo {
+  z-index: 0;
+   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+}
+
 #mymap {
-  width: 100%;
-  height: auto;
+ height: 10rem;
 }
-  .budgetcontainer{
+#ffd {
+  width: 70%;
+}
+.budgetcontainer{
     font-size: 15px;
     color: #B2351A;
     font-family: 'Oswald';
@@ -141,13 +167,52 @@ transform-origin: 50% 50%;
 }
     
  }
+ @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
   @media screen and (min-width: 450px) {
+.images {
+  height: 30rem;
+}
  #ffd {
 width: 50%;
 height: 50%;
   }
+  #mymap {
+ height: 30rem;
+
+}
 
   }
 @media screen and (min-width: 650px){
@@ -155,4 +220,11 @@ height: 50%;
     height: 40%;
     width: 40%;
   }
+  .images {
+  height: 40rem;
+}
+  #mymap {
+ height: 40rem;
+
+}
 }
