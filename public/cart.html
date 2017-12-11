@@ -5,13 +5,6 @@
          <ul class="itemWrap" ng-repeat="items in $ctrl.tab track by $index">
             <li>Place: {{items.restaurant}} Item: {{items.name}} Price: $ {{items.price}}</li><i class="material-icons" ng-click="$ctrl.remove($index,items);">clear</i>
         </ul>
-    <h3 class="tipHeader">ADD A TIP</h3>
-    <div class="tipButtons">
-        <button class="button" ng-click="$ctrl.tipOne()">15%</button>
-        <button class="button" ng-click="$ctrl.tipTwo()">20%</button>
-        <button class="button" ng-click="$ctrl.tipThree()">25%</button>
-    </div>
-    <div id="tipbar">${{$ctrl.tip}}</div>
     <h3 class="totalHeader">TOTAL: $ {{$ctrl.initialBudget - $ctrl.budget}}</h3>
     <div class="emailButton">
         <a href="#!/email"><button class="button">EMAIL YOUR ORDER</button></a>
