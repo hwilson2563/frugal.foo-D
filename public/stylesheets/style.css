@@ -49,6 +49,16 @@ li a:hover {
  #budget {
    margin-top: -30px;
  }
+.homeWrap{
+   display: flex;
+   align-items: center;
+   margin-top: -2.8%;
+   color: #b2351a;
+ }
+
+ .navtitle .homeWrap:hover{
+   background-color: rgba(166, 255,218,0);
+ }
 
  @media screen and (min-width: 400px) {
   li {
