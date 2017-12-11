@@ -8,17 +8,31 @@
  			<img id="mymap" src="images/corktownmap.png">  
  		</div>
 	</div>
-
+<div id="budgetchooser">
 	<div class="budgetcontainer">
 			<h1>WHAT'S IN YOUR POCKET?</h1>
 			</div>
 			<div class="moneybuttons">
-		<a href="#!/map"><button class="button" ng-click="$ctrl.submitBudget(10)" >$10</button></a>
-		<a href="#!/map"><button class="button" ng-click="$ctrl.submitBudget(20)">$20</button></a>
-		<a href="#!/map"><button class="button" ng-click="$ctrl.submitBudget(30)">$30</button></a>
-		<a href="#!/map"><button class="button" ng-click="$ctrl.submitBudget(40)">$40</button></a>
+		<button class="button" ng-click="$ctrl.submitBudget(10)" >$10</button>
+		<button class="button" ng-click="$ctrl.submitBudget(20)">$20</button>
+		<button class="button" ng-click="$ctrl.submitBudget(30)">$30</button>
+		<button class="button" ng-click="$ctrl.submitBudget(40)">$40</button>
 			</div>
+			
 	<div class= "choosebudget">
 		<input type="number" name="budget" placeholder="personalized budget" ng-model="$ctrl.custom">
-		<a href="#!/map"><button class="button" ng-click="$ctrl.submitBudget($ctrl.custom)">SUBMIT</button></a>
-		</div>
+		<button class="button" ng-click="$ctrl.submitBudget($ctrl.custom)">SUBMIT</button>
+	</div>
+	</div>
+	<div id="choosetip">
+		<div class="budgetcontainer">
+			<h1>DON'T FORGET A TIP</h1>
+			</div>
+		<div class="tipButtons">
+        <button class="button" ng-click="$ctrl.tipOne()">15%</button>
+        <button class="button" ng-click="$ctrl.tipTwo()">20%</button>
+        <button class="button" ng-click="$ctrl.tipThree()">25%</button>
+        <div id="tipbar">${{$ctrl.tip}}</div>
+        <a href="#!/map"><button class="button" ng-click="">SUBMIT</button></a>
+    </div>
+	</div>
