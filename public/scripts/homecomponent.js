@@ -5,39 +5,41 @@
 		var vm = this;
         vm.budget = 0;
         vm.tip = "";
+        vm.initialbudget = 0;
         vm.submitBudget = function(budget){
+          vm.initialbudget = budget;
           vm.budget = budget;
           console.log(vm.budget);
           document.getElementById("budgetchooser").className = "slideout";
-          document.getElementById("choosetip").style.display = "block";
+          document.getElementById("choosetip").style.display = "flex";
           document.getElementById("choosetip").className = "slidein";
-          BudgetService.setBudget(vm.budget);
+          BudgetService.setBudget(vm.initialbudget);
         };
         vm.tipOne =function(){
           document.getElementById("tipbar").style.display = "block";
-           vm.tip = vm.budget * .15;
+           vm.tip = vm.initialbudget * .15;
            vm.tip = Math.round(vm.tip*100)/100;
            BudgetService.saveTip(vm.tip);
-           vm.budget=vm.budget - vm.tip;
-            console.log(budget);
+           vm.budget=vm.initialbudget - vm.tip;
+         
             BudgetService.setBudget(vm.budget);
           };
         vm.tipTwo =function(){
             document.getElementById("tipbar").style.display = "block";
-           vm.tip=( vm.budget * .20);
+           vm.tip=( vm.initialbudget * .20);
            vm.tip = Math.round(vm.tip*100)/100;
            BudgetService.saveTip(vm.tip);
-           vm.budget= vm.budget - vm.tip;
-            console.log(budget);
+           vm.budget= vm.initialbudget - vm.tip;
+          
             BudgetService.setBudget(vm.budget);
         };        
         vm.tipThree =function(){
             document.getElementById("tipbar").style.display = "block";
-           vm.tip=( vm.budget * .25);
+           vm.tip=( vm.initialbudget * .25);
            vm.tip = Math.round(vm.tip*100)/100;
            BudgetService.saveTip(vm.tip);
-            vm.budget = vm.budget - vm.tip;
-            console.log(vm.budget);
+            vm.budget = vm.initialbudget - vm.tip;
+    
             BudgetService.setBudget(vm.budget);
        };
         
