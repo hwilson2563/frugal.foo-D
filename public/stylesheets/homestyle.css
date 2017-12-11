@@ -12,6 +12,9 @@
   transform: translate(-50%, -50%);
   
 }
+#choosetip {
+  display: none;
+}
 #mymap {
  height: 20rem;
 }
