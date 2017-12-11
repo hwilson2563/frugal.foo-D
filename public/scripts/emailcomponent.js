@@ -12,15 +12,12 @@
         vm.total =(vm.initialBudget - vm.budget)+vm.tip
         vm.emailInfo = {};
         console.log($http);
-
        vm.sendEmail = function(email, comment, total, budget, food, data){
         vm.emailInfo.emailAddress = email;
         vm.emailInfo.comment = comment;
         vm.emailInfo.total = total;
         vm.emailInfo.budget = budget;
         vm.emailInfo.order = food;
-       
-        console.log(orderString);
         console.log(vm.emailInfo);
         $http({
             method: "POST",
