@@ -11,6 +11,7 @@
           document.getElementById("budgetchooser").className = "slideout";
           document.getElementById("choosetip").style.display = "block";
           document.getElementById("choosetip").className = "slidein";
+          BudgetService.setBudget(vm.budget);
         };
         vm.tipOne =function(){
           document.getElementById("tipbar").style.display = "block";
