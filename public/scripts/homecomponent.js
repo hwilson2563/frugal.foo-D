@@ -8,8 +8,9 @@
         vm.submitBudget = function(budget){
           vm.budget = budget;
           console.log(vm.budget);
+          document.getElementById("budgetchooser").className = "slideout";
           document.getElementById("choosetip").style.display = "block";
-          document.getElementById("budgetchooser").style.display = "none";
+          document.getElementById("choosetip").className = "slidein";
         };
         vm.tipOne =function(){
           document.getElementById("tipbar").style.display = "block";
