@@ -19,12 +19,16 @@
             {name: "McShanes", lat: 42.331616, lng: -83.066820, id:"ChIJrdacYUUtO4gRLwQmzHdpp-k", menuTable: "mcshanes", img:"images/McShanes.jpg"}
           ];
   
-          var map = new google.maps.Map(document.getElementById('map'), {
+  var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
-            center: {lat: 42.331598, lng:-83.065734}
+            center: {lat: 42.331598, lng:-83.065734},
+            icon: {
+              url: "images/pin.png",
+              scaledSize: new google.maps.Size(40, 55)
+            }
           });
   
-          var labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"]
+          var labels = [ "", "", "", "", "", "", "", "", "", "", "", ""]
           var infowindow = new google.maps.InfoWindow();
           var service = new google.maps.places.PlacesService(map);
           var markers = locations.map(function(location, i) {
@@ -34,7 +38,8 @@
               position: location,
               table: location.menuTable,
               img: location.img,
-              label: labels[i % labels.length]
+              label: labels[i % labels.length],
+              icon: map.icon
             });
           });
           
