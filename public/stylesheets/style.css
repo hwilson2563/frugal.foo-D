@@ -11,11 +11,19 @@ body{
 }
 
 .navtitle {
-  color:#b2351a;
+  
   font-family: "Oswald";
   text-align: left;
   position: absolute;
   left: 10px;
+}
+
+
+.homeWrap{
+  display: flex;
+  align-items: center;
+  margin-top: -3%;
+  color:#b2351a;
 }
 
 
@@ -45,6 +53,10 @@ li a {
 li a:hover {
   color:#b2351a;
   background-color: rgb(236, 250, 244);
+}
+
+.navtitle .homeWrap:hover{
+  background-color: rgba(166, 255, 218, 0);
 }
  #budget {
    margin-top: -30px;
