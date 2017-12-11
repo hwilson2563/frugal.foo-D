@@ -33,6 +33,10 @@ progress{
 .progressbar p {
 font-family: 'Oswald';
 }
+.progressinfo {
+    background-color:rgba(166, 255, 219, .5);
+}
+
 progress {
   -webkit-appearance: none;
   appearance: none;
