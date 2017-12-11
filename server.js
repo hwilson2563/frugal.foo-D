@@ -9,7 +9,13 @@ app.use(bodyParser.json());
 app.use("/", routes);
 
 app.post("/email", function(req, res){
-
+  var stuff = req.body;
+  var orderString = "";
+        stuff.order.forEach(function(item){
+            var obj= "";
+            obj = "Restaurant: "+ item.restaurant +" Item: "+ item.name + " Price: $ "+ item.price;
+            orderString += obj;
+        });
     var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -17,12 +23,13 @@ app.post("/email", function(req, res){
       pass: 'grandcircus2017'
     }
   });
+
   
   var mailOptions = {
-    from: 'jules.tf4@yahoo.com',
-    to: 'jules.tf4@yahoo.com',
-    subject: 'Sending Email using Node.js',
-    text: 'That was easy!'
+    from: stuff.emailAddress,
+    to: stuff.emailAddress,
+    subject: 'Frugal Foo-d Reciept',
+    text: orderString + ' Budget: $ ' + stuff.budget + ' Total: $ '+ stuff.total + ' Comment: ' + stuff.comment + 'Thank you for choosing Frugal Foo-d!'
   };
   
   transporter.sendMail(mailOptions, function(error, info){
