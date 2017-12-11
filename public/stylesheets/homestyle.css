@@ -12,7 +12,9 @@
   transform: translate(-50%, -50%);
   
 }
-
+#mymap {
+ height: 20rem;
+}
 .imageone{
   z-index: 20;
 }
@@ -24,12 +26,6 @@
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
 }
-}
-
-#mymap {
- height: 10rem;
-}
-
 .budgetcontainer{
     font-size: 15px;
     color: #B2351A;

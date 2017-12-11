@@ -1,21 +1,11 @@
 .menucontainer {
   display: inline-grid;
-  /* grid-template-rows: 20% 20% 20%; */
-  grid-gap: 10px;
+  grid-template-rows: 20% 20% 20%;
+ 
   font-family: "Barlow Condensed";
+  margin-bottom: 200px;
 }
 
-.box1{
-  grid-row-start: 1;
-}
-
-.box2 {
-  grid-row: 2;
-}
-
-.box3 {
-  grid-row-end: 3;
-} 
 
 .box1, .box2, .box3 {
   display: flex;
