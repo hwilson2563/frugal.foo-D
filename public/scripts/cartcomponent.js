@@ -17,19 +17,22 @@
         vm.tipOne =function(){
           document.getElementById("tipbar").style.display = "block";
           var total = vm.initialBudget-vm.budget ;
-           vm.tip=( total * .15);
+           vm.tip =total * .15;
+           vm.tip = Math.round(vm.tip*100)/100;
            BudgetService.saveTip(vm.tip);
         };
         vm.tipTwo =function(){
             document.getElementById("tipbar").style.display = "block";
             var total = vm.initialBudget-vm.budget ;
            vm.tip=( total * .20);
+           vm.tip = Math.round(vm.tip*100)/100;
            BudgetService.saveTip(vm.tip);
         };        
         vm.tipThree =function(){
             document.getElementById("tipbar").style.display = "block";
              var total = vm.initialBudget-vm.budget ;
            vm.tip=( total * .25);
+           vm.tip = Math.round(vm.tip*100)/100;
            BudgetService.saveTip(vm.tip);
         };
     }
