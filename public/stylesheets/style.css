@@ -3,6 +3,7 @@ body{
 }
 .nav {
   height: 15%;
+  width: auto;
   background-color: #a6ffdb;
   margin: 1rem;
   border-radius: 5px;
