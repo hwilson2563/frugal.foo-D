@@ -18,7 +18,7 @@
            vm.tip = vm.budget * .15;
            vm.tip = Math.round(vm.tip*100)/100;
            BudgetService.saveTip(vm.tip);
-           budget=vm.budget - vm.tip;
+           vm.budget=vm.budget - vm.tip;
             console.log(budget);
             BudgetService.setBudget(vm.budget);
           };
@@ -27,7 +27,7 @@
            vm.tip=( vm.budget * .20);
            vm.tip = Math.round(vm.tip*100)/100;
            BudgetService.saveTip(vm.tip);
-           budget=vm.budget - vm.tip;
+           vm.budget= vm.budget - vm.tip;
             console.log(budget);
             BudgetService.setBudget(vm.budget);
         };        
