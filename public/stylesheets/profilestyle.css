@@ -63,8 +63,27 @@
 
 .pngBut:hover{
   content: url("butHov.png");
+  width: 60%;
+  height: 88%;
+}
+
+@media screen and (min-width: 900px){
+.pngBut{
   width: 40%;
   height: 88%;
+}
+
+.pngBut:hover{
+  content: url("butHov.png");
+  width: 40%;
+  height: 88%;
+}
+
+.picture {
+    width: 45%;
+    height: 45%;
+    }
+
 }
 
 

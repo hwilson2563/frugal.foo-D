@@ -323,6 +323,9 @@ transform-origin: 50% 50%;
   align-items: center;
 }
 
+#ffdnav {
+  width: 6%;
+}
 
 @media screen and (min-width: 450px) {
 .images {
@@ -351,7 +354,14 @@ height: 50%;
 
 }
 }
-
-#ffdnav {
-  width: 6%;
+@media screen and (min-width: 900px){
+  #mymap{
+    height: 35rem;
+  }
+  .images{
+    height: 35rem;
+  }
 }
+
+
+

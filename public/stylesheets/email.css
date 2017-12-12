@@ -92,3 +92,9 @@ width: 35%;
         padding-right: 20px;
     }
 }   
+
+@media screen and (min-width: 900px){
+    .emailinfo{
+    width: 50%;
+}
+}
