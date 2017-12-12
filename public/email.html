@@ -6,8 +6,10 @@
             <h1>EMAIL</h1>
         <form >
             <input type="text" ng-model="$ctrl.userEmail" placeholder="Email Address">
-            <p>Budget: ${{$ctrl.initialBudget}}</p>
-            <p>Total:$ {{$ctrl.total}}</p>
+            <p>Budget: ${{$ctrl.initialBudget + $ctrl.tip}}</p>
+            <p>Total:${{$ctrl.total}}</p>
+            <p>New Tip:${{$ctrl.newtip}}</p>
+            <p>Grand total:$å{{$ctrl.total + $ctrl.newtip}}</p>
             <p> Items Ordered: 
                 <ul class="itemWrap" ng-repeat="items in $ctrl.tab track by $index">
                     <li>{{items.name}} ${{items.price}}</li>                                                                 

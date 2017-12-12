@@ -9,8 +9,11 @@
         vm.tab = BudgetService.getCart();
         vm.tip = BudgetService.getTip();
         vm.info = BudgetService.getInfo();
-        vm.total =(vm.initialBudget - vm.budget)+vm.tip
+        vm.total =(vm.initialBudget - vm.budget);
         vm.emailInfo = {};
+        vm.newtip = vm.total*(vm.tip/(vm.initialBudget + vm.tip));
+        vm.newtip = Math.round(vm.newtip*100)/100;
+        console.log(vm.newtip);
         console.log($http);
        vm.sendEmail = function(email, comment, total, budget, food, data){
         vm.emailInfo.emailAddress = email;
