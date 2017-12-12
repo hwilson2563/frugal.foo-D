@@ -1,12 +1,12 @@
 .restaurantshit {
-  width: 60%;
-  height: 80;
   background-color: white;
   box-shadow: 0px 5px 5px 0px lightgray;
   margin: auto;
   padding: 20px;
   text-align: center;
   margin-bottom: 200px;
+  width: 70%;
+  height: 40%;
 }
 .restaurantname {
   text-align: center;
@@ -64,5 +64,6 @@
   width: 40%;
   height: 88%;
 }
+
 
 
