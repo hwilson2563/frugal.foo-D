@@ -67,7 +67,7 @@
 
 #overbudget {
  background-color: rgb(236, 250, 244);
- box-shadow: 0px 5px 5px 0px lightgray;
+ box-shadow: 0px 5px 5px 0px gray;
   height: auto;
   padding: 10px;
   border-radius: 10px;
@@ -98,17 +98,17 @@
   position: relative;
 }
 
- 
+
  
 @media screen and (min-width: 750px) {
-  .menucontainer {
-  display:grid;
-
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-  justify-items: center;
-  }
   .box1, .box2, .box3 {
-    width: 90%;
+    width: 50%;
+    margin: auto;
+
   }
+  .menucontainer {
+    grid-gap: 15px;
+  }
+
+
 }

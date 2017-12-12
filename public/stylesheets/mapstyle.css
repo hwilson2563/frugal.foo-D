@@ -55,3 +55,16 @@ progress::-webkit-progress-value {
   background-image: repeating-linear-gradient(45deg, #58FFC2, #A6FFDB 8px, #58FFC2 8px, #A6FFDB 16px);
   border-radius: 20px;
 }
+
+
+@media screen and (min-width: 600px) {
+#map {
+    height: 50rem;
+    width: 100%;
+    margin-top: 20px;
+  }
+  progress {
+    width: 400px;
+  }
+}
+
