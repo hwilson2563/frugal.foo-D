@@ -31,13 +31,13 @@ ul {
   justify-content: flex-end;
   margin: 0;
   flex-direction: row;
-  font-family: "Barlow Condensed";
+  font-family: "Oswald";
   font-size: 18px;
 }
-li {
-  padding: 8px 2px;
+/* li {
+  padding: 8px 0px;
   text-align: center;
-}
+} */
 li a {
   text-decoration: none;
   color: #2cb280;
@@ -140,6 +140,6 @@ li a:hover {
 
  @media screen and (min-width: 400px) {
   li {
-  padding: 8px 20px;
+  padding: 8px 5px;
 }
  }
