@@ -22,6 +22,7 @@
 .itemWrap h4 {
   color:#B2351A;
   padding: 2px;
+  display: inline;
 }
 .material-icons{
   cursor: pointer;
@@ -214,7 +215,7 @@ justify-content: center;
 }
 .itemWrap li {
   width: 80%;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
   color: #2cb280;
@@ -232,3 +233,10 @@ justify-content: center;
     height: 35px;
     }
   }
+
+@media screen and (min-width: 750px){
+  .itemWrap li {
+    width: 80%;
+    color: #2cb280;
+  }
+}
