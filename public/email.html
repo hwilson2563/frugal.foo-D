@@ -6,15 +6,30 @@
             <h1>EMAIL</h1>
         <form >
             <input type="text" ng-model="$ctrl.userEmail" placeholder="Email Address">
-            <p>Budget: ${{$ctrl.initialBudget + $ctrl.tip}}</p>
-            <p>Total:${{$ctrl.total}}</p>
-            <p>New Tip:${{$ctrl.newtip}}</p>
-            <p>Grand total:$å{{$ctrl.total + $ctrl.newtip}}</p>
-            <p> Items Ordered: 
-                <ul class="itemWrap" ng-repeat="items in $ctrl.tab track by $index">
-                    <li>{{items.name}} ${{items.price}}</li>                                                                 
-                </ul>
-            </p>
+        <div class="moneyinfo">
+            <div id="itemlist">
+                <h2>Items Ordered: </h2>
+                    <ol class="itemlists">
+                        <li ng-repeat="items in $ctrl.tab track by $index">
+                            <p class="name">{{items.name}}  ${{items.price}}.00</p>
+                        </li>                                                   
+                    </ol>
+                </p>
+            </div>
+            <div>
+                <h2>Budget:</h2> 
+                <p>${{$ctrl.initialBudget + $ctrl.tip}}.00</p>
+            </div>
+            <div>
+                <h2>Total:</h2>  <p>${{$ctrl.total}}.00</p>
+            </div>
+            <div>
+                <h2>New Tip:</h2> <p>${{$ctrl.newtip}}</p>
+            </div>
+            <div>
+            <h2>Grand total:</h2> <p>${{$ctrl.total + $ctrl.newtip}}</p>
+            </div>
+        </div>
             <input type="textarea" ng-model="$ctrl.comment" placeholder="Leave a comment!">
             <a href="#!/home">
                 <button type="button" class="button" ng-click="$ctrl.sendEmail($ctrl.userEmail, $ctrl.comment, $ctrl.total, $ctrl.initialBudget, $ctrl.tab);" >SEND </button>
