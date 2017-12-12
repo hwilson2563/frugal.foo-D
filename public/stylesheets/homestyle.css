@@ -313,6 +313,18 @@ transform-origin: 50% 50%;
   }
 }
 
+.tipWrap{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tipbuttonWrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 
   @media screen and (min-width: 450px) {
 .images {
