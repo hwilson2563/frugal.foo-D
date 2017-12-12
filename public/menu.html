@@ -1,119 +1,41 @@
-.menucontainer {
-  font-family: "Barlow Condensed";
-  margin-bottom: 200px;
-  position: relative;
-  display: grid;
-  margin-top: 35px;
-  grid-template-columns: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+<div class="pageTransition">
+<h1>MENU of {{$ctrl.info.name}}</h1>
+<div class="menucontainer">
+ <div class="box1">
+    <h3>APPETIZERS </h3>
+  <div class="typeFood">
+        <button ng-click="$ctrl.add(item);" class="menuitems" ng-repeat="item in $ctrl.menu track by $index" ng-show="item.type === 'appetizer'" ng-class="item.over">
+        <span class="name">{{item.name}}</span><span class="price">${{item.price}} + </span>
+        </button>
+     </div>
+     </div>
+ <div class="box2">
+    <h3>SIDES</h3> 
+     <div class="typeFood">
+      <button ng-click="$ctrl.add(item);" class="menuitems"  ng-repeat="item in $ctrl.menu track by $index" ng-show="item.type === 'side dish'" ng-class="item.over">
+       <span class="name">{{item.name}}</span><span class="price">${{item.price}} + </span>
+      </button>
+    </div>
+    </div>
+    <div class="box3">
+      <h3>ENTREES </h3> 
+      <div class="typeFood">
+        <button ng-click="$ctrl.add(item);"  class="menuitems" ng-repeat="item in $ctrl.menu track by $index" ng-show="item.type === 'main dish'" ng-class="item.over">
+        <span class="name">{{item.name}}</span><span class="price">${{item.price}} + </span>
+        </button>
+     </div>
+</div>
+</div>
+</div>
+<div class="progressinfo">
+<h6 class="barHeader">YOUR BUDGET BAR</h6>
+<div class="progressBar">
+    <progress id = "budget" value="{{$ctrl.budget}}" max="{{$ctrl.initialBudget}}"></progress>
+    <p>${{$ctrl.budget}}</p>
+</div>
+<div id="overbudget">
+  <div>	You have gone over your set budget! Would you like to adjust the budget? <br> </div>
+	<div> <a href="#!/home"><button>yes</button></a><button ng-click="$ctrl.overbudgetRemove()">no</button>
+  <div>
 
-
-.box1, .box2, .box3 {
-  display: flex;
-  flex-direction: column; 
-  -webkit-box-shadow: -1px -12px 57px -8px rgba(178,53,26,.5);
-  -moz-box-shadow: -1px -12px 57px -8px rgba(178,53,26,.5);
-  box-shadow: -1px -12px 57px -8px rgba(178,53,26,.5);
-  background-color: rgba(255, 118, 88, .5);
-  padding: 20px;
-  padding-top: 0px;
-  border-radius: 10px;
-  /* width: 90%; */
-  margin-bottom: 10px; 
-  height: 300px;
-  width: auto;
-  overflow: scroll;
-}
-
-.typeFood{
-  overflow: scroll;
-}
-
-  h3 {
-  text-align: center;
-  font-size: 25px;
-  padding-top: 0px;
-  font-family: "Barlow Condensed"
-}
-
-.name, .price {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: "Barlow Condensed";
-  font-size: 20px;
-}
-
-
- .add {
-  font-size: 20px;
-  color:#2CB280;
-  border: none;
-  text-decoration: none;
-  background-color: none;
-  float: right;
-  padding: 0px;
-  background-color: rgb(236, 250, 244);
-}
-
-.menuitems {
-  padding: 8px;
-  margin: 10px;
-  width: 90%;
-  height: 20%;
-  border-radius: 10px;
-  color:#2CB280;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(236, 250, 244);
-}
-
-.over {
-  color:#FF7658 ;
-  background-color: #B2351A;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.over .add{
-  color:#B2351A ;
-  background-color: #FF7658;
-  cursor: not-allowed;
-}
-
-#overbudget {
-  /* background-color: rgb(236, 250, 244); */
-  width: 100%;
-  height: 800px;
-  border-radius: 10px;
-  font-family:"Barlow Condensed";
-  font-size: 30px;
-  position: absolute;
-  top: 100px;
-  right: 0;
-}
-
-#overbudget button {
-  margin-top: 10px;
-}
-
-#overbudget div {
-  display: flex;
-  justify-content: center;
-}
-
- 
- 
-@media screen and (min-width: 750px) {
-  .menucontainer {
-  display:grid;
-
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-  justify-items: center;
-  }
-  .box1, .box2, .box3 {
-    width: 90%;
-  }
-}
+</div>
