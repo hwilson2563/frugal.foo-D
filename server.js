@@ -19,7 +19,7 @@ app.post("/email", function(req, res){
     var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'fauxEmail2017@gmail.com',
+      user: 'frugal.foodie.detroit7@gmail.com',
       pass: 'grandcircus2017'
     }
   });
