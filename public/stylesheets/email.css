@@ -6,6 +6,45 @@ h1 {
     margin-top: 5px;
 }
 
+
+.moneyinfo h2 {
+    text-align: left;
+    margin-bottom: 5px;
+    font-family: "Oswald";
+    color: #B2351A;
+    margin-top: 5px;
+}
+.moneyinfo div p {
+    font-size: 20px;
+    margin-left: auto;    
+}
+.moneyinfo div {
+    display: flex;
+    align-items: center;
+}
+#itemlist {
+    display: flex;
+    flex-direction: column;
+}
+#itemlist h2 {
+    align-self: flex-start;
+}
+#itemlist .itemlists {
+    font-family: "Barlow Condensed";
+    flex-direction: column;
+    align-items: center;
+    color: #2cb280;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+.itemWrap {
+    margin-right: 0;
+}
+.moneyinfo {
+    display: flex;
+    flex-direction: column;
+}
 .emailinfo {
     background-color: white;
     width: 40%;
