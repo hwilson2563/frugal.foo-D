@@ -38,9 +38,6 @@ h1 {
     padding: 0;
     margin: 0;
 }
-.itemWrap {
-    margin-right: 0;
-}
 .moneyinfo {
     display: flex;
     flex-direction: column;
