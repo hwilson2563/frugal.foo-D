@@ -3,7 +3,7 @@
     <h3 class="itemsOrdered">ITEMS ORDERED<i class="material-icons" id="iconSwing">restaurant</i></h3>
 
          <ul class="itemWrap" ng-repeat="items in $ctrl.tab track by $index">
-            <li>Place: {{items.restaurant}} Item: {{items.name}} Price: $ {{items.price}}</li><i class="material-icons" ng-click="$ctrl.remove($index,items);">clear</i>
+            <li><h4>Place: </h4>{{items.restaurant}} <h4> Item: </h4>{{items.name}} <h4> Price: </h4> $ {{items.price}}</li><i class="material-icons" ng-click="$ctrl.remove($index,items);">clear</i>
         </ul>
     <h3 class="totalHeader">TOTAL: $ {{$ctrl.initialBudget - $ctrl.budget}}</h3>
     <div class="emailButton">
