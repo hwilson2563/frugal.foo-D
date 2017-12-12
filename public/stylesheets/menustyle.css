@@ -26,17 +26,6 @@
   width: auto;
   overflow: scroll;
 }
-.box1 {
-  z-index: 0;
-}
-.box2 {
-  z-index: 5;
-  top: 100px;
-}
-.box3 {
-  z-index: 10;
-  top: 200px;
-}
 
 .typeFood{
   overflow: scroll;
@@ -49,47 +38,38 @@
   font-family: "Barlow Condensed"
 }
 
-.name {
+.name, .price {
   margin-left: 10px;
   margin-right: 10px;
-  font-family: "Barlow Condensed"
-}
-
-.price {
   font-family: "Barlow Condensed";
-}
-
- .add {
   font-size: 20px;
-  color:#2CB280;
-  border: none;
-  text-decoration: none;
-  background-color: none;
-  float: right;
-  padding: 0px;
-  background-color: rgb(236, 250, 244);
 }
 
 .menuitems {
   padding: 8px;
   margin: 10px;
+  width: 90%;
+  height: 20%;
   border-radius: 10px;
   color:#2CB280;
+  display: flex;
+  justify-content: space-between;
   background-color: rgb(236, 250, 244);
 }
 
 .over {
-  color:#FF7658 ;
-  background-color: #B2351A;
+  color:white ;
+  background-color: #FF7658;
   padding: 10px;
   border-radius: 10px;
-}
-
-.over .add{
-  color:#B2351A ;
-  background-color: #FF7658;
   cursor: not-allowed;
 }
+
+/* .over .menuitems{
+  color:white ;
+  background-color: #FF7658;
+  cursor: not-allowed;
+} */
 
 #overbudget {
   /* background-color: rgb(236, 250, 244); */
