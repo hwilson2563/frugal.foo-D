@@ -25,10 +25,14 @@
 	</div>
 	</div>
 	<div id="choosetip">
-		<h1>DON'T FORGET A TIP</h1>
-		<button class="button" ng-click="$ctrl.tipOne()">15%</button>
-        	<button class="button" ng-click="$ctrl.tipTwo()">20%</button>
-        	<button class="button" ng-click="$ctrl.tipThree()">25%</button>
-        	<div id="tipbar">${{$ctrl.tip}}</div>
-        	<a href="#!/map"><button class="submitbutton">SUBMIT</button></a>
-		</div>
+		<div class="tipWrap">
+			<h1>DON'T FORGET A TIP</h1>
+				<div class="tipbuttonWrap">
+					<button class="button" ng-click="$ctrl.tipOne()">15%</button>
+					<button class="button" ng-click="$ctrl.tipTwo()">20%</button>
+					<button class="button" ng-click="$ctrl.tipThree()">25%</button>
+					<a href="#!/map"><button class="submitbutton">SUBMIT</button></a>
+				</div>
+				<div id="tipbar">${{$ctrl.tip}}</div>
+			</div>
+	</div>
