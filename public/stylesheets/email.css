@@ -16,6 +16,7 @@ h1 {
 }
 .moneyinfo div p {
     font-size: 20px;
+    height: 20px;
     margin-left: auto;    
 }
 .moneyinfo div {
@@ -25,6 +26,7 @@ h1 {
 #itemlist {
     display: flex;
     flex-direction: column;
+
 }
 #itemlist h2 {
     align-self: flex-start;
@@ -38,19 +40,21 @@ h1 {
     padding: 0;
     margin: 0;
 }
+.itemlists li {
+    padding: 1px 3px;
+}
 .moneyinfo {
     display: flex;
     flex-direction: column;
 }
 .emailinfo {
     background-color: white;
-    width: 40%;
-    height: 60%;
+    width: 90%;
+    height: 50%;
     padding: 15px;
     margin: auto;
     box-shadow: 0px 5px 5px 0px lightgray;
     text-align: center;
-    margin-top: 50px;
 }
 .emailinfo p {
     font-family: "Barlow Condensed";

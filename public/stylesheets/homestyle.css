@@ -12,9 +12,9 @@
   transform: translate(-50%, -50%);
   
 }
+
 #choosetip {
   display: none;
-  width: 50%;
   height: 25%;
   text-align: center;
   margin: auto;
@@ -22,7 +22,6 @@
 }
 .submitbutton {
   padding: 10px 20px;
-  margin-top: 15px;
   border-radius: 10px;
   background-color: #a6ffdb;
   font-family: "Barlow Condensed";
@@ -316,8 +315,7 @@ transform-origin: 50% 50%;
 .tipWrap{
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 .tipbuttonWrap{
   display: flex;
@@ -326,7 +324,7 @@ transform-origin: 50% 50%;
 }
 
 
-  @media screen and (min-width: 450px) {
+@media screen and (min-width: 450px) {
 .images {
   height: 30rem;
 }

@@ -34,10 +34,10 @@ ul {
   font-family: "Oswald";
   font-size: 18px;
 }
-/* li {
-  padding: 8px 0px;
+li {
+  padding: 8px 5px;
   text-align: center;
-} */
+}
 li a {
   text-decoration: none;
   color: #2cb280;
@@ -138,8 +138,4 @@ li a:hover {
   }
 }
 
- @media screen and (min-width: 400px) {
-  li {
-  padding: 8px 5px;
-}
- }
+ 

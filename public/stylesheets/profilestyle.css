@@ -5,12 +5,12 @@
   padding: 20px;
   text-align: center;
   margin-bottom: 200px;
-  width: 70%;
+  width: 80%;
   height: 40%;
 }
 .restaurantname {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .profileContainer{
@@ -22,7 +22,7 @@
   .picture {
     width: 70%;
     height: 70%;
-    margin: 10px;
+    margin: 5px;
     border: 5px solid #2cb280;
   }
   .address, .number {
@@ -32,6 +32,8 @@
     display: block;
     text-align: center;
     padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   .link {
     font-family: "Barlow Condensed";
@@ -55,7 +57,7 @@
 }
 
 .pngBut{
-  width: 40%;
+  width: 60%;
   height: 88%;
 }
 

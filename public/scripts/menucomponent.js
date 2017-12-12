@@ -14,8 +14,8 @@
              var elements = document.getElementsByClassName("typeFood");
              console.log(elements);
                 for (var i=0; i < elements.length; ++i){
-                    elements[i].style.display = "flex";
-                }
+                     elements[i].style.display = "block";
+             }
             }
         BudgetService.getFoodList().then(function(response) {
             vm.menu = response.data;
@@ -41,7 +41,6 @@
             vm.menu = response.data;
             vm.menu.forEach(function(item){
                 if(item.price > vm.budget){
-                    console.log(item);
                     vm.overBudgetItems.push(item);
                     item.over = "over";
                     console.log(item);
