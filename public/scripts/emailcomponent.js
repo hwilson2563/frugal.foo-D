@@ -21,6 +21,7 @@
         vm.emailInfo.total = total;
         vm.emailInfo.budget = budget;
         vm.emailInfo.order = food;
+        BudgetService.cleanCart();
         console.log(vm.emailInfo);
         $http({
             method: "POST",

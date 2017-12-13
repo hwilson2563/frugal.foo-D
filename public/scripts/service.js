@@ -23,8 +23,16 @@
         getPhoto: getPhoto,
         removeCart: removeCart,
         saveTip: saveTip,
-        getTip: getTip
+        getTip: getTip,
+        cleanCart: cleanCart
       };
+      function cleanCart(){
+        cart = [];
+        updateBudget= 0;
+        budget=0;
+        tip = 0;
+        console.log("cartClean");
+      }
       function getTip(){
         return tip;
       }
