@@ -20,11 +20,9 @@
         BudgetService.getFoodList().then(function(response) {
             vm.menu = response.data;
             vm.menu.forEach(function(item){
-                if(item.price > vm.initialBudget){
-                    console.log(item);
+                if(item.price > vm.budget){
                     vm.overBudgetItems.push(item);
                     item.over = "over";
-                    console.log(item);
                 }
 
             })
@@ -34,7 +32,6 @@
         vm.add = function(addItem) {
             
            addItem.restaurant = vm.info.name;
-            console.log(addItem);
             BudgetService.addCart(addItem);
             vm.budget= BudgetService.getUpdateBudget();
             BudgetService.getFoodList().then(function(response) {
@@ -43,7 +40,6 @@
                 if(item.price > vm.budget){
                     vm.overBudgetItems.push(item);
                     item.over = "over";
-                    console.log(item);
                 }
 
             })
