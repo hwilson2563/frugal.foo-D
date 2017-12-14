@@ -1,7 +1,7 @@
 (function(){
     var menuComponent ={
     templateUrl: "menu.html",
-    controller: function(BudgetService){
+    controller: function(BudgetService, $timeout){
         var vm = this;
         document.getElementById("overbudget").style.display = "none";
         vm.menu=[];
@@ -34,6 +34,7 @@
            addItem.restaurant = vm.info.name;
             BudgetService.addCart(addItem);
             vm.budget= BudgetService.getUpdateBudget();
+                      
             BudgetService.getFoodList().then(function(response) {
             vm.menu = response.data;
             vm.menu.forEach(function(item){
@@ -41,6 +42,7 @@
                     vm.overBudgetItems.push(item);
                     item.over = "over";
                 }
+               
 
             })
         
@@ -54,11 +56,14 @@
                     elements[i].style.display = "none";
                 }
                 return;
-            }
-            else {
+                }
+                else {
                 document.getElementById("overbudget").style.display = "none";
-                
-            }
+                document.getElementById("itemAdded").className = "slideDown";
+                $timeout(function() {
+                    document.getElementById("itemAdded").classList.remove("slideDown");
+                }, 1500);
+                }
         };
 
 
